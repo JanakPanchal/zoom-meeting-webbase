@@ -1,4 +1,4 @@
-const socket = io('ws://localhost:3030', {transports: ['websocket']})
+const socket = io('/', {transports: ['websocket']})
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
   path: '/peerjs',
